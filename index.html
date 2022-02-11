@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
   <title>Momentum App</title>
 </head>
+
+
 <body>
-  <div class="hello">
-    <h1>white snow 1</h1>
-  </div>
+  <form id="login-form" >
+    <input 
+      required 
+      maxlength="15" 
+      type="text" 
+      placeholder="What is your name?" 
+    />
+    <button>Log In</button>
+  </form>
+  <h1 id="greeting" class="hidden"></h1>
 
   <script src="app.js"></script>
 </body>

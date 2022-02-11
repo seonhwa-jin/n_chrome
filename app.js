@@ -1,84 +1,18 @@
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
 
-// const seonhwaCalculator = {
-//   add: function( jelly , bean ){
-//     return jelly + bean ;
-//   },
-//   minus: function( jelly , bean ){
-//     return jelly - bean ;
-//   },
-//   multi: function( jelly , bean ){
-//     return jelly * bean ;
-//   },
-//   divide: function( jelly , bean){
-//      return jelly / bean ;
-//   },
-//   powerof: function ( jelly , bean){
-//     return jelly**bean ;
-//   }
-// };
+const HIDDEN_CLASSNAME = "hidden";
 
-// const result= seonhwaCalculator.add(1,1);
-
-
-
-
-
-
-
-
-// const age = 96;
-// function calKrAge(ageOfForeigner){
-//   return ageOfForeigner + 2;
-// }
-
-// const krAge = calKrAge(age);
-
-
-
-
-
-
-
-
-//age calculator!
-// const age = parseInt(prompt("How old are you?"));
-
-
-
-// if (isNaN(age) || age<0 ){
-//   console.log("Please write a real positive number")
-// } else if(age < 18){
-//   console.log("You are too young")
-// } else if(age >= 18 && age<=50 ){
-//   console.log("You can drink")
-// } else{
-//   console.log("You can't drink")
-// }
-
-
-const title = document.querySelector("div.hello:first-child h1");
-
-console.dir(title);
-
-function handleTitleClick(){
-  title.style.color="pink";
+function onLoginSubmit(event){
+  event.preventDefault();
+  const userName = loginInput.value;
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+  console.log(userName);
+  greeting.innerText = `hello ${userName}`;
+  greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleMouseEnter(){
-  title.innerText = "Mouse is here!";
-}
+loginForm.addEventListener("submit", onLoginSubmit);
 
-function handleMouseleave(){
-  title.innerText = "Mouse is gone!";
-}
-
-title.addEventListener("click",handleTitleClick);
-title.addEventListener("mouseenter",handleMouseEnter);
-title.addEventListener("mouseleave",handleMouseleave);
-
-function handleWindowResize(){
-  document.body.style.backgroundColor = "tomato";
-}
-
-window.addEventListener("resize",handleWindowResize);
