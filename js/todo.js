@@ -14,8 +14,9 @@ function savedToDos(){
 
 function deleteToDo (pepsi){
   const subject = pepsi.target.parentElement;
-  console.log(subject.id);
+  toDos = toDos.filter((dodo) => dodo.id !== parseInt (subject.id));
   subject.remove();
+  savedToDos();
 }
 
 
@@ -66,5 +67,11 @@ if(getToDos !== null){
 }
 
 
+
+function melon (){
+
+}
+
+[1,2,3,4].filter(melon)
 
 
