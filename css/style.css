@@ -2,3 +2,75 @@
   display: none;
 }
 
+.imgsize{
+  width:100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  grid-column: 1/2;
+  grid-row:2/3;
+  border: 5px white solid;
+}
+
+body{
+  background-color:#8E806A;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:2fr 1fr;
+  font-family: 'Fredoka', sans-serif;
+  width: 60%;
+  height: 60vh;
+  gap:15px;
+}
+
+.square1{
+  grid-column: 1/3;
+  grid-row:1/2;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-top:30px;
+  padding-left: 30px;
+
+}
+
+#clock{
+  color:#C3B091;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+
+#greeting{
+  color:#8E806A;
+  font-size: 3rem;
+  font-weight: 900;
+  background-color: #FFE6BC;
+  border-radius: 15px;
+  display: inline;
+  margin-bottom: 20px;
+}
+
+
+#playlist{
+  width: 50%;
+ ;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  width:100%;
+  height: 100%;
+  
+}
+
+#todo{
+  ;
+}
+
+#qq{
+  background-color: #FFE6BC; ;
+  color:red;
+}
